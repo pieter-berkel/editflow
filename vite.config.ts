@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import tailwindcss from "@tailwindcss/vite";
+import { fileURLToPath, URL } from "url";
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -12,6 +13,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  resolve: {
+    alias: {
+      "@": "./src",
+    },
+  },
   build: {
     lib: {
       entry: "lib/index.ts",
@@ -24,6 +30,7 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
           "react/jsx-runtime": "jsxRuntime",
+          tailwindcss: "tailwindcss",
         },
       },
     },
