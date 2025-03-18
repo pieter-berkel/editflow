@@ -8,11 +8,11 @@
     "css": "lib/styles.css",
     "baseColor": "neutral",
     "cssVariables": true,
-    "prefix": ""
+    "prefix": "ef:"
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/utils",
+    "utils": "@/utils/cn",
     "ui": "@/components/ui",
     "lib": "@/lib",
     "hooks": "@/hooks"
