@@ -17,6 +17,6 @@
     "lib": ["es2022", "dom", "dom.iterable"],
     "jsx": "react-jsx"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "lib"],
   "exclude": ["node_modules", "dist"]
 }

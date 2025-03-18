@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/lib/index.ts","./src/lib/components/button.tsx","./src/lib/components/sum.ts"],"version":"5.8.2"}
+{"root":["./src/app.tsx","./src/main.tsx","./lib/index.ts","./lib/components/button.tsx","./lib/components/sum.ts"],"version":"5.8.2"}

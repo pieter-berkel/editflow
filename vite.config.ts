@@ -1,18 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
+import tailwindcss from "@tailwindcss/vite";
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
   plugins: [
-    react(),
     dts({
-      include: ["src/lib"],
+      include: ["lib"],
     }),
+    react(),
+    tailwindcss(),
   ],
   build: {
     lib: {
-      entry: "src/lib/index.ts",
+      entry: "lib/index.ts",
       formats: ["es"],
     },
     rollupOptions: {
