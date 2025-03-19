@@ -1,10 +1,12 @@
-import { Button } from "../lib";
+import { Editflow } from "@/index";
 
 function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Button />
+      <div className="ef:mx-auto ef:py-8 ef:max-w-2xl">
+        <Editflow />
+      </div>
     </>
   );
 }

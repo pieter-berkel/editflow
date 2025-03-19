@@ -5,26 +5,26 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/utils/cn";
 
 const buttonVariants = cva(
-  "ef:inline-flex ef:items-center ef:justify-center ef:gap-2 ef:whitespace-nowrap ef:rounded-md ef:text-sm ef:font-medium ef:transition-all disabled:ef:pointer-events-none disabled:ef:opacity-50 [&_svg]:ef:pointer-events-none [&_svg:not([class*=size-])]:ef:size-4 ef:shrink-0 [&_svg]:ef:shrink-0 ef:outline-none focus-visible:ef:border-ring focus-visible:ef:ring-ring/50 focus-visible:ef:ring-[3px] aria-invalid:ef:ring-destructive/20 dark:aria-invalid:ef:ring-destructive/40 aria-invalid:ef:border-destructive",
+  "ef:inline-flex ef:items-center ef:justify-center ef:gap-2 ef:whitespace-nowrap ef:rounded-md ef:text-sm ef:font-medium ef:transition-all ef:disabled:pointer-events-none ef:disabled:opacity-50 ef:[&_svg]:pointer-events-none ef:[&_svg:not([class*=size-])]:size-4 ef:shrink-0 ef:[&_svg]:shrink-0 ef:outline-none ef:focus-visible:border-ring ef:focus-visible:ring-ring/50 ef:focus-visible:ring-[3px] ef:aria-invalid:ring-destructive/20 ef:dark:aria-invalid:ring-destructive/40 ef:aria-invalid:border-destructive",
   {
     variants: {
       variant: {
         default:
-          "ef:bg-primary ef:text-primary-foreground ef:shadow-xs hover:ef:bg-primary/90",
+          "ef:bg-primary ef:text-primary-foreground ef:shadow-xs ef:hover:bg-primary/90",
         destructive:
-          "ef:bg-destructive ef:text-white ef:shadow-xs hover:ef:bg-destructive/90 focus-visible:ef:ring-destructive/20 dark:focus-visible:ef:ring-destructive/40 dark:ef:bg-destructive/60",
+          "ef:bg-destructive ef:text-white ef:shadow-xs ef:hover:bg-destructive/90 ef:focus-visible:ring-destructive/20 ef:dark:focus-visible:ring-destructive/40 ef:dark:bg-destructive/60",
         outline:
-          "ef:border ef:bg-background ef:shadow-xs hover:ef:bg-accent hover:ef:text-accent-foreground dark:ef:bg-input/30 dark:ef:border-input dark:hover:ef:bg-input/50",
+          "ef:border ef:bg-background ef:shadow-xs ef:hover:bg-accent ef:hover:text-accent-foreground ef:dark:bg-input/30 ef:dark:border-input ef:dark:hover:bg-input/50",
         secondary:
-          "ef:bg-secondary ef:text-secondary-foreground ef:shadow-xs hover:ef:bg-secondary/80",
+          "ef:bg-secondary ef:text-secondary-foreground ef:shadow-xs ef:hover:bg-secondary/80",
         ghost:
-          "hover:ef:bg-accent hover:ef:text-accent-foreground dark:hover:ef:bg-accent/50",
-        link: "ef:text-primary ef:underline-offset-4 hover:ef:underline",
+          "ef:hover:bg-accent ef:hover:text-accent-foreground ef:dark:hover:bg-accent/50",
+        link: "ef:text-primary ef:underline-offset-4 ef:hover:underline",
       },
       size: {
-        default: "ef:h-9 ef:px-4 ef:py-2 has-[>svg]:ef:px-3",
-        sm: "ef:h-8 ef:rounded-md ef:gap-1.5 ef:px-3 has-[>svg]:ef:px-2.5",
-        lg: "ef:h-10 ef:rounded-md ef:px-6 has-[>svg]:ef:px-4",
+        default: "ef:h-9 ef:px-4 ef:py-2 ef:has-[>svg]:px-3",
+        sm: "ef:h-8 ef:rounded-md ef:gap-1.5 ef:px-3 ef:has-[>svg]:px-2.5",
+        lg: "ef:h-10 ef:rounded-md ef:px-6 ef:has-[>svg]:px-4",
         icon: "ef:size-9",
       },
     },

@@ -1,3 +1,3 @@
 import "@/styles.css";
 
-export { Button } from "@/components/ui/button";
+export { RichTextEditor as Editflow } from "@/components/rich-text-editor";
